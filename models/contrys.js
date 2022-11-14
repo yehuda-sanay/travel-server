@@ -91,4 +91,4 @@ const States = [
     }
 ]
 
-module.exports={States}
+module.exports = States
