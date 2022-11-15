@@ -1,6 +1,8 @@
 const express= require('express');
 const cors= require('cors');
 const {statesRouter}=require("./routes/State-route")
+const {airlinesRouter}=require('./routes/Airlines-route')
+const {flightsRouter}=require('./routes/Flights-route')
 
 const app=express();
 const port= 8080;
@@ -10,6 +12,8 @@ app.use(express.urlencoded({extended: true}));
 app.use(cors())
 
 app.use("/states",statesRouter)
+app.use('/airLines',airlinesRouter)
+app.use('/flights',flightsRouter)
 
 app.get('/',(req, res)=>{
     res.send({massage: "success"})

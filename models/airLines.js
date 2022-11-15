@@ -70,3 +70,5 @@ const Airlines = [
         availableFlights:58
     }
 ]
+
+module.exports=Airlines
