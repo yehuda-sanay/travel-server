@@ -1,3 +1,8 @@
+
+const mongoose =require('mongoose');
+
+const AirLine = new Schema
+
 const Airlines = [
     {
         id:1,

@@ -1,5 +1,7 @@
+const dotenv=require('dotenv').config();
 const express= require('express');
 const cors= require('cors');
+require ('./DB')
 const {statesRouter}=require("./routes/State-route")
 const {airlinesRouter}=require('./routes/Airlines-route')
 const {flightsRouter}=require('./routes/Flights-route')

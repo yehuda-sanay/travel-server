@@ -1,3 +1,24 @@
+const mongoose = require("mongoose");
+
+
+const Schema = mongoose.Schema;
+
+const Movie = new Schema({
+    id:Number,
+    countryName:String,
+    cities:[String],
+    info:{
+        capital:String,
+        airportName:String,
+    },
+},
+
+    {timestamps:true}
+)
+module.exports = mongoose.model('state', States)
+
+
+
 const States = [
     {
         id:1,
